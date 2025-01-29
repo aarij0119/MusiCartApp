@@ -7,12 +7,23 @@ import { FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
     const [password,setshowpassword] = useState(false);
+    const[formdata,setfromdata] = useState({
+        email:'',
+        password:'',
+    })
     const PasswordHandler = () =>{
         setshowpassword((prev) => !prev)
        
     }
+    const Changehandler = (e) =>{
+        const {name,value}  = e.target;
+        setfromdata({
+            ...formdata,[name]:value
+        })
+    }
     const SubmitHandler = (e) => {
         e.preventDefault();
+        console.log(formdata)
     }
     return (
         <div className="bg-white  min-h-screen">
@@ -26,20 +37,21 @@ const Login = () => {
                     <form onSubmit={SubmitHandler}>
                         <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                                Enter your email or mobile number
+                                Enter your email
                             </label>
-                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email or Mobile Number" />
+                            <input name='email' onChange={Changehandler} value={formdata.email} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email" />
                         </div>
                         <div className="mb-6">
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
                                 Password
                             </label>
                             <div className='flex items-center justify-between border shadow rounded'>
-                            <input className="p-2.5 appearance-none w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type={password ? 'text' : 'password'  } placeholder="Password" /><button onClick={PasswordHandler} className='px-2.5'>{password ? < FaEye /> : <FaEyeSlash /> }</button> 
+                            <input name='password' onChange={Changehandler} value={formdata.password} className="p-2.5 appearance-none w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type={password ? 'text' : 'password'  } placeholder="Password" />
+                            <button type='button' onClick={PasswordHandler} className='px-2.5'>{password ? < FaEye /> : <FaEyeSlash /> }</button> 
                             </div>
                         </div>
                         <div>
-                            <button className="bg-[#2E0052] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button">
+                            <button className="bg-[#2E0052] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="submit">
                                 Continue
                             </button>
                         </div>
