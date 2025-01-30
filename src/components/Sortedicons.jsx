@@ -13,91 +13,104 @@ const Sortedicons = () => {
                 name: "AstroX Sonic",
                 price: 2999,
                 color: "Black",
-                headphoneType: "On-ear headphone"
+                headphoneType: "On-ear headphone",
+                id: 1
               },
               {
                 image: "https://media.istockphoto.com/id/1373017594/photo/headphones-on-the-orange-color-background.jpg?s=612x612&w=0&k=20&c=9SEBT-6kUjIBy33Ga-C9n6CQMd7FOUk3yC89mOAa0ts=",
                 name: "Echo Beats Pro",
                 price: 3499,
                 color: "White",
-                headphoneType: "In-Ear headphone"
+                headphoneType: "In-Ear headphone",
+                id: 2
               },
               {
                 image: "https://images.pexels.com/photos/577769/pexels-photo-577769.jpeg?cs=srgb&dl=pexels-parag-deshmukh-180046-577769.jpg&fm=jpg",
                 name: "BassMaster 5000",
                 price: 4999,
                 color: "Blue",
-                headphoneType: "Over-Ear headphone"
+                headphoneType: "Over-Ear headphone",
+                id: 3
               },
               {
                 image: "https://cdn.shopify.com/s/files/1/0608/4988/1306/files/roar-301-headphone.png?v=1667291051",
                 name: "ZenAudio Lite",
                 price: 1999,
                 color: "Red",
-                headphoneType: "On-Ear headphone"
+                headphoneType: "On-Ear headphone",
+                id: 4
               },
               {
                 image: "https://images-cdn.ubuy.co.in/6587417bae7bb0463e32498e-sony-wh-1000xm5-the-best-wireless-noise.jpg",
                 name: "PulseWave Ultra",
                 price: 3999,
                 color: "Green",
-                headphoneType: "Over-Ear headphone"
+                headphoneType: "Over-Ear headphone",
+                id: 5
               },
               {
                 image: 'https://plus.unsplash.com/premium_photo-1678099940967-73fe30680949?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D',
                 name: "PulseWave Ultra",
                 price: 3999,
                 color: "Green",
-                headphoneType: "Over-Ear headphone"
+                headphoneType: "Over-Ear headphone",
+                id: 6
               },
               {
                 image: 'https://m.media-amazon.com/images/I/7179kqSfnAL.jpg',
                 name: 'Zebronics',
                 price: 625,
                 color: 'Black',
-                headphoneType: 'Over-Ear headphone'
+                headphoneType: 'Over-Ear headphone',
+                id: 7
               },
               {
                 image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTBqpSPhq5lbHdrVPdhMHYIFsMElDhORHEjJWfDAaW18mJaGD7GcxqjzuNCNW-dApgUTC-siEDAhx51xQtn4tIXtstOSCIC-itwetWOQRE',
                 name: 'Zebronics',
                 price: 700,
                 color: 'LighBlue',
-                headphoneType: 'Over-Ear headphone'
+                headphoneType: 'Over-Ear headphone',
+                id: 8
               },
               {
                 image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR9QW_S3P99bvXxL2wMA-6d-43bcLJ-xvw6qxQYIg8uyg_S43QKOzLRoCSC9-IeMdjcqYzrl58Xipui08JunrgPGkoCUPvxi9Q0dwIABd6w57M9hyIcpaLKJA',
                 name: 'Noise Airwave',
                 price: 3000,
                 color: 'Black',
-                headphoneType: 'Over-Ear headphone'
+                headphoneType: 'Over-Ear headphone',
+                id: 9
               },
               {
                 image: 'https://images.meesho.com/images/products/439123043/dqywy_1200.jpg',
                 name: 'Zebronics Boom',
                 price: 700,
                 color: 'Black',
-                headphoneType: 'Over-Ear headphone'
+                headphoneType: 'Over-Ear headphone',
+                id: 10,
               },
               {
                 image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQeoQ2TurVLi5bbrK3_vn6rg0Riztzg5089jSlLu1jNzqpfBE03MKxxNckOnho0Plw5BgN42B_EgKmEDC5V4Y7fPb1LgLn9d4tAxGkecY4JjA8k4btyMxr9kw',
                 name: 'Sony',
                 price: 8000,
                 color: 'LigtBlue',
-                headphoneType: 'Over-Ear headphone'
+                headphoneType: 'Over-Ear headphone',
+                id: 11
               },
               {
                 image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTMxS9Ojr2aToX0cnNMYk2L_8shwRXWIvHPE1xw2VwKf0lPNz2IG8HZdm3UxkuPoY9-vLibc-KezPlJhpp5vJhPGHrUaSiv2qeAQDuy6Uk',
                 name: 'Jbl Tune',
                 price: 5000,
                 color: 'LigtZinc',
-                headphoneType: 'Over-Ear headphone'
+                headphoneType: 'Over-Ear headphone',
+                id: 12
               },
               {
                 image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTx5ZRNTjUM7a1EToXrRSlydQ3wCBqB_Md_e0DWHmt97tsgHfMWEAyGRN7kdDAiPo0-a_t6CulxoRWAdNAWY_GZdvaUA05yubYd5p9dpAG68jhxUXQSBw8-BsI',
                 name: 'Sony',
                 price: 5000,
                 color: 'LigtGray',
-                headphoneType: 'Over-Ear headphone'
+                headphoneType: 'Over-Ear headphone',
+                id: 13
               },
             
             ];
@@ -167,8 +180,8 @@ const Sortedicons = () => {
             </div>
             </div>
             <div className={`flex ${forGrid ? 'flex-row' : twoGrid ? 'flex-col' : ''} flex-wrap gap-4 mt-12`}>
-            {producInfo.map((items)=>{
-               return <Cart items={items} forGrid={forGrid} twoGrid={twoGrid}/>
+            {producInfo.map((items,idx)=>{
+               return <Cart key={idx} items={items} forGrid={forGrid} twoGrid={twoGrid}/>
             })}
             </div>
             

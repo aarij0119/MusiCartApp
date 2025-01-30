@@ -1,27 +1,31 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { IoCartOutline } from "react-icons/io5";
 import Logo from '/images/Logo.png'
+import { CartContext } from '../context/Viewproduct';
 
 const Header = () => {
+    //Context
+    const {Cart} = useContext(CartContext);
+    
     const [visible,setvisible] = useState(false);
     const visibleHandler = () => {
-        // alert(visible)
         setvisible((prev) => !prev)
     }
+    
     return (
         <div>
             <header className='flex justify-between items-center'>
                 <div className='flex items-center gap-2.5'>
                     <img className='w-[3rem]' src={Logo}/>
                     <h1 className='text-[1.8rem] text-[#2E0052] font-bold'>Musicart</h1>
-                    <Link className='text-[1.2rem] mt-1.5' to=''>Home</Link>
+                    <Link className='text-[1.2rem] mt-1.5' to='/home'>Home</Link>
                     <Link className='text-[1.2rem] mt-1.5' to=''>Invoice</Link>
                 </div>
                 <div className='flex gap-3 items-center'>
-                    <Link>
-                        <div className='flex items-center bg-[#1D7000] text-white p-2 px-4 rounded-4xl'>
-                        <IoCartOutline />  View Cart 0
+                    <Link to={'/viewCart'}>
+                        <div className='flex items-center bg-[#1D7000] text-white p-2 px-4 rounded-4xl gap-1'>
+                        <IoCartOutline />  View Cart {Cart.length}
                         </div>
                     </Link>
                     <div className='relative'>
